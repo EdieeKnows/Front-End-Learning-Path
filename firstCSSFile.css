@@ -1,0 +1,62 @@
+
+* {
+	/* this is a universal selector */
+	color: rgb(48, 37, 70);
+}
+
+a {
+	/* this is a achor tag selector */
+	font-size: 200%;
+}
+
+a:visited {
+	/* this is a Pseudo selector */
+	color: purple;
+}
+
+a:hover {
+	color: green;
+	text-decoration: none;
+}
+
+.text-field {
+	color: blue;
+}
+
+.text-field:disabled {
+	color: red;
+}
+
+.blueLarge {
+	/* this is a class selector */
+	color: blue;
+	font-size: large;
+}
+
+.redSmall {
+	color: red;
+	font-size: small;
+}
+
+#myName {
+	/* this is a id selector */
+	color:blueviolet;
+	font-size: medium;
+}
+
+input[type=radio] {
+	width: 70px;
+	height: 70px;
+}
+
+.C ~ .B {
+	/* Here we use some combinators to define the scope of our style, there are three combinators,
+		they are .A .B (Descendant), .A > .B (Child), .C + .B (Adjacent sibling), .C ~ .B (General
+		sibling). */
+	color: green;
+}
+
+p::first-letter {
+	/* this is a Pseudo class element */
+	font-size:x-large;
+}

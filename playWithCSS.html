@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Let's play with CSS!</title>
+		<!-- this is the line to import your CSS file -->
+		<link rel="stylesheet" href="firstCSSFile.css" />
+		<!-- this is the CSS that you write directly in your html head -->
+		<style type="text/css">
+			.pinkLarger {
+				color:pink;
+				font-size:larger;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- you can use CSS(casading style sheets) in the html to change looking of different elements
+				this will make your page looks not that boring. -->
+		<p style="color:blue; font-size:large">
+			Hello world!(large)
+		</p>
+		<p style="color:red; font-size:small">
+			Hello world!(small)
+		</p>
+
+		<!-- but generally we prefer to write CSS in another file and load it in the html page. The reason
+				we want to do this is not just reuse the CSS to different elements, but also your browser will 
+				have the copy of CSS file and update in a period of time which will speedup your page laoding.-->
+		<p class="blueLarge">
+			Hello world!(large)
+		</p>
+		<p class="redSmall">
+			Hello world!(small)
+		</p>
+
+		<!-- you can also just write your style in the head of the html file. -->
+		<p class="pinkLarger">
+			This style define in the head of html file.
+		</p>
+
+		<!-- selectors are some conditions you want to apply to elements which are going to affected by your CSS -->
+		<span>This line is not black because it is styled by universal selector.</span>
+
+		<br />
+
+		This
+		<!-- there are also tag selectors by which you can apply your style to all curtain elements, 
+					e.g. here we have achor been styled  -->
+		<a href="https://www.google.com">google</a>
+		is 200% size.
+
+		<p>
+			Here we used a id selector to make your <span id="myName">Name XYZ</span> a bit different from other text.
+		</p>
+
+		<!-- you can use your attribute selectors to make elements with curtain attributes to be styled -->
+		<form>
+			<p>
+				Here we have two radio buttons and a text input button. We want our radio buttons to be bigger.
+				but we don't want our text input button change. We can use the attribute selector to do the job.
+			</p>
+			<input name="a button" type="radio" />
+			<br />
+			<input name="a button" type="radio" />
+			<br />
+			<input type="text" class="text-field" value="type here" disabled />
+		</form>
+
+		<!-- Here is some combinators examples. -->
+		<div class="A">
+			<span class="B">This is first B</span>
+			<span class="C">This is first C</span>
+			<span class="B">This is second B</span>
+			<span class="B">This is third B</span>
+			<div>
+				<span class="B">This is a B nested in A div.</span>
+			</div>
+		</div>
+		
+		<p>
+			You can use Pseudo class to select specific area of a element.
+		</p>
+		<p>
+			For example every first letter of paragraph is bigger now.
+		</p>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Let's play with text and background image formating.</title>
+		<!-- more meta here -->
+		<style type="text/css">
+			.my-text {
+				color: red;
+				font-weight: bold;
+				font-family: Arial;
+				font-size: 1.5em;
+				text-decoration: underline;
+				font-style:italic;
+				line-height:0%;
+				letter-spacing:0.2em;
+			}
+			.my-pic {
+				/* font-size:2em;
+				font-family: Arial;
+				font-weight:bold; */
+				font:italic bold 2em Arial;
+				color:antiquewhite;
+				width:500px;
+				height:500px;
+				/* background-image:url(https://i.etsystatic.com/19125345/r/il/9a44a3/2228702885/il_1588xN.2228702885_carx.jpg); */
+				/* background-size:500px 500px; */
+				/* background-repeat:no-repeat; */
+				background: no-repeat top url(https://i.etsystatic.com/19125345/r/il/9a44a3/2228702885/il_1588xN.2228702885_carx.jpg);
+				background-size:cover;
+				border:3px dotted black;
+				box-shadow: 0 0 5px black;
+			}
+		</style>
+	</head>
+	<body>
+		<span class="my-text">
+			<p>
+				Hello!
+			</p>
+			<p>
+				How are you?
+			</p>
+			<p>
+				I am good.
+			</p>
+		</span>
+		<div class="my-pic">
+			<p>
+				Hello!
+			</p>
+			<p>
+				How are you?
+			</p>
+			<p>
+				I am good.
+			</p>
+			<!-- <img width="400" src="https://i.etsystatic.com/19125345/r/il/9a44a3/2228702885/il_1588xN.2228702885_carx.jpg" /> -->
+		</div>
+	</body>
+</html>
