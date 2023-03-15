@@ -1,0 +1,51 @@
+body {
+	background-color: #151b29;
+}
+h1 {
+	text-align:center;
+	font-family:'Courier New', Courier, monospace;
+	text-transform:capitalize;
+	color:#f1faee;
+}
+section {
+	text-align:center;
+}
+.yellow-hover {
+	font-weight:700;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding:0.5em;
+	width:10em;
+	height:3.18em;
+	background-color:rgba(0, 0, 0, 0);
+	transition:1s;
+	border-color:#e63946;
+	border-radius:1em;
+	border-style:solid;
+	box-shadow:none;
+	color:#e63946;
+	background-color:#a8dadc;
+	cursor: pointer;
+}
+section {
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	border:1px solid black;
+	height:100vh;
+}
+.yellow-hover:hover {
+	transform:translateY(-10px);
+	box-shadow:0px 10px 5px -5px #a8dadc;
+	border-color:#a8dadc;
+	background-color:#f1faee;
+	color:#457b9d;
+}
+.yellow-hover:active {
+	/* transform:translateY(-10px);
+	box-shadow:0px 10px 5px -5px #a8dadc;
+	border-color:#a8dadc;
+	background-color:#f1faee;
+	color:#457b9d; */
+	border-color:#457b9d;
+	transition:none;
+}
