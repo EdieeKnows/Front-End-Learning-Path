@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML & CSS Review</title>
+
+	<!--use of Google fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+	<!--My own CSS file-->
+	<link rel="stylesheet" href="app.css">
+	<!--Include Bootstrap here-->
+	<!--
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	-->
+</head>
+<body>
+
+	<!-- Use of comment here -->	
+	
+	<h1>HTML&CSS Review by XYZ</h1>
+	<h2>Text Element</h2>
+	<a rel="noopener" href="https://www.google.com" target="_blank">This is an anchor element to google</a>
+	<p>This is a example of abbreviation: <abbr title="www.google.com">Google</abbr> is a useful search engine.</p>
+	<h2>List</h2>
+	<p>There are some examples of lists:</p>
+	<ol>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+		<li>item 4</li>
+	</ol>
+	<p>This is a unordered list:</p>
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+		<li>item 4</li>
+	</ul>
+	
+	<h2>Form elements</h2>
+	<form action="/register">
+		<label for="first_name">First Name</label>
+		<input type="text" name="first_name" id="first_name" required>
+
+		<label for="ln">Last Name</label>
+		<input type="text" name="last_name" id="ln" required>
+
+		<div>
+			<p>Select a Rece</p>
+			<input type="radio" name="race" id="fun_run" value="fun_run" required>
+			<label for="fun_run">Fun Run 5km</label>	
+			<br>
+			<input type="radio" name="race" id="half_marathon" value="half_marathon">
+			<label for="half_marathon">Half Marathon</label>
+			<br>
+			<input type="radio" name="race" id="full_marathon" value="full_marathon">
+			<label for="full_marathon">Full Marathon</label>
+		</div>
+		<label for="email">Email Address</label>
+		<input type="email" name="email" id="email" required>
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" required>
+		<br>
+		<label for="age_group">Select your age group</label>
+		<select name="age_group" id="age_group">
+			<option value="younger18">under 18</option>
+			<option value="18to50">18 - 50</option>
+			<option value="older50">50 +</option>
+		</select>
+
+		<br>
+		<button type="submit">Register</button>
+	</form>
+	<h3>here is an example of using ouput element</h3>
+	<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+  <input title="select a value" type="range" id="b" name="b" value="50" /> +
+  <input title="input a value" type="number" id="a" name="a" value="10" />
+  <output name="result" for="a b">60</output>
+</form>
+
+<h2>CSS: Selectors</h2>
+<h3>Type, class and ID selectors</h3>
+<p>Here a type selector is used to select all anchor elements:</p>
+<a href="http://www.google.com" target="_blank" rel="noopener noreferrer">All anchor elements in this html are green and become grey when hovered.</a>
+<p>But this anchor element is a bit different because it belongs to the class "special_element", and for this class, font size are bigger.</p>
+<a class="special_element" href="http://www.google.com" target="_blank" rel="noopener noreferrer">The bigger font size one.</a>
+<p>Also you can use a ID selector to select unqie element.</p>
+<a href="http://www.google.com" id="one">This anchor element has no under line.</a>
+
+<h2>CSS: Box Model</h2>
+<p>Here is an example of what you can do with css box model.</p>
+<div id="box_example">
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui labore inventore rem! Totam doloribus nostrum quis modi natus earum perferendis facere, sint, vitae libero, cupiditate dolor! Aperiam adipisci at aliquid?
+		Dolore, aspernatur? Sed corrupti distinctio deleniti dolor qui ullam iste quod repellendus adipisci maxime! Ab, ducimus perspiciatis est harum sint iure! Facilis corrupti quam cumque nisi optio possimus fugit nihil?
+		Consectetur, quasi. Aliquid, aspernatur. Aspernatur atque corporis, voluptate at minima, repellat ullam culpa a laborum velit iure molestiae facere pariatur animi possimus adipisci quibusdam unde commodi libero eius ipsam eligendi?
+		Numquam delectus rem illo! Ut id veritatis voluptas a sint, eos, laboriosam dolorum maiores cupiditate consequuntur, quibusdam eius ab unde suscipit nemo illo! Nam eum neque eos ipsa. Eos, illum?
+		Eligendi, necessitatibus amet? Repudiandae corporis adipisci laudantium nemo non, aperiam provident recusandae odio quisquam. Recusandae provident dignissimos magni dolorum dicta rerum, consectetur facilis earum dolore, nemo magnam? Deserunt, facere rerum?
+	</p>
+</div>
+<h2>CSS: flex-box</h2>
+<section class="flex-container">
+<p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, repudiandae repellendus ipsum quisquacusamus sit, nihil repellat, delectus enim qui illum dolor, corporis alias. Perspiciatis consequuntur illum quam?</p>
+<p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, repudiandae repellendus ipsum quisquam magni exercitationem corrupti voluptate reiciendis natus aperiam voluptatibus, saepe pariatur ad vero? Consequatur amet architecto sapiente sed.
+Reprehenderit dolorum perspiciatis quis praesentium nesciunt assumenda repudiandae voluptatum unde, provident pariatur. Saepe ipsam iste accusamus sit, nihil repellat, delectus enim qui illum dolor, corporis alias. Perspiciatis consequuntur illum quam?</p>
+<p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, repudiandae repellendus ipsum quisquam magni exercitationem corrupti voluptate reiciendis natus aperiam voluptatibus, saepe pariatur ad vero? Consequatur amet architecto sapiente sed.
+Reprehenderit dolorum perspiciatis quis praesentium nesciunt assumenda repudiandae voluptatum unde, provident pariatur. Saepe ipsam iste accusamus sit, nihil repellat, delectus enim qui illum dolor, corporis alias. Perspiciatis consequuntur illum quam?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsam iure facilis ullam vel facere, reiciendis quaerat vitae repellendus ex itaque veritatis aperiam officiis eum impedit omnis. Recusandae, animi nostrum.</p>
+<p class="card">delectus enim qui illum dolor, corporis alias. Perspiciatis consequuntur illum quam?</p>
+</section>
+
+<footer>xyz 19/05/23</footer>
+
+<!--Bootstrap JavaScript file-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
