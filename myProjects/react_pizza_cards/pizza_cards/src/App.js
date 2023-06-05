@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 //import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/style.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { PizzaCard } from "./components/PizzaCards";
 import { Confirmation } from "./components/Confirmation";
